@@ -1,0 +1,52 @@
+#a{
+  background-color: cyan;
+  border: 5px;
+  border-style: groove;
+}
+
+.dino {
+  position: absolute;
+  width: 170px;
+  height: 242px;
+  background-image: url(t-rex.png);
+  bottom: 10px;
+  
+}
+
+.obstacle {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-image: url(cacti.png);
+  bottom: 0px;
+  
+}
+
+@keyframes slideright {
+  from {
+      background-position: 70000%;
+  }
+  to {
+      background-position: 0%;
+  }
+}
+
+@-webkit-keyframes slideright {
+  from {
+      background-position: 70000%;
+  }
+  to {
+      background-position: 0%;
+  }
+}
+
+#desert {
+  position: absolute;
+  bottom: 100px;
+  background-image: url('t-rex-background.png');
+  background-repeat: repeat-x;
+  animation: slideright 600s infinite linear;
+  -webkit-animation: slideright 600s infinite linear;
+  width: 100%;
+  height: 200px;
+}
